@@ -40,7 +40,7 @@ handleSelect(selectedTab) {
      });
   }
 getData(ev, year, month){
-    axios.get('http://localhost:8080/expense/'+year+'/'+month)
+    axios.get('https://expensemanagerapi-1573076507261.azurewebsites.net/expense/'+year+'/'+month)
       .then(function(response) {
         ev.setState({data: response.data});
         ev.setState({selectedYear: parseInt(year)});

@@ -28,7 +28,7 @@ onClick(e){
      this.delete(this);
     }
 delete(e){
-    axios.delete('http://localhost:8080/expense',{
+    axios.delete('https://expensemanagerapi-1573076507261.azurewebsites.net/expense',{
         params: { id: e.state.id }
       })
       .then(function(response) {
